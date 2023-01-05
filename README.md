@@ -1,5 +1,4 @@
 # neog-pig-latin
-# neog-minion-talk
 <b>Tech Stack</b> - HTML, CSS, JS<br/>
 <b>Code editor<b> - Visual Studio Code<br/>
 This project was made with the intention to test promises, error-handling and api-handling conceptual understanding.<br/>
