@@ -32,7 +32,7 @@ const addTextToOutputContainer = (text) => {
     outputContainer.textContent = text;
 }
 
-const buttonHandler = (input) => {
+const buttonHandler = async(input) => {
      
     const data = fetchApi(createURL(input));
     if(typeof(data)== String){
