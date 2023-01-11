@@ -29,14 +29,15 @@ async function fetchApi(url){
 }
 
 const addTextToOutputContainer = (text) => {
-    outputContainer.textContent = text;
+    outputContainer.innerText = text;
 }
 
 const buttonHandler = async(input) => {
      
-    const data = fetchApi(createURL(input));
+    const data = await fetchApi(createURL(input));
+    console.log(data)
     if(typeof(data)== String){
-    outputContainer.innerText = data
+    addTextToOutputContainer(data)
     }
     else{
         window.alert("Something went wrong!! Please try after sometime");
